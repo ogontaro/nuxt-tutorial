@@ -1,11 +1,29 @@
 <template>
   <div>
-    <nuxt/>
+    <top-header/>
+    <main id="main" role="main">
+      <nuxt/>
+    </main>
+    <bottom-footer/>
   </div>
 </template>
 
+<script>
+  import TopHeader from '~/components/TopHeader.vue'
+  import BottomFooter from '~/components/BottomFooter.vue'
+
+  export default {
+    components: {
+      TopHeader,
+      BottomFooter
+    }
+  }
+</script>
+
 <style>
-html {
+  @import '../assets/scss/styles.scss';
+
+  html {
   font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
