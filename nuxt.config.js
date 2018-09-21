@@ -21,11 +21,14 @@ module.exports = {
   /*
   ** Build configuration
   */
+  plugins: [
+    '~/plugins/components'
+  ],
   build: {
     /*
     ** Run ESLint on save
     */
-    extend (config, { isDev, isClient }) {
+    extend(config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
           enforce: 'pre',
@@ -35,6 +38,9 @@ module.exports = {
         })
       }
     }
-  }
+  },
+  modules: [
+    ['storyblok-nuxt', { accessToken: 'YPU9MlGOrozncVcyFutOMQtt', cacheProvider: 'memory' }]
+  ]
 }
 
