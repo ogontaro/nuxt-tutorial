@@ -1,7 +1,4 @@
 # nuxt-tutorial
-
-> My striking Nuxt.js project
-
 ## Build Setup
 
 ``` bash
