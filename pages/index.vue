@@ -6,7 +6,7 @@
         nuxt-tutorial
       </h1>
       <h2 class="subtitle">
-        My striking Nuxt.js project
+        My terrific Nuxt.js project
       </h2>
       <div class="links">
         <a
